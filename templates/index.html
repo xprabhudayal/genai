@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document AI Simplifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-balance-scale"></i>
+                    <h1>LegalDoc AI</h1>
+                </div>
+                <p class="tagline">Demystifying Legal Documents with AI</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- File Upload Section -->
+            <section class="upload-section">
+                <div class="upload-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>Upload Legal Document</h3>
+                        <p>Drag & drop your document here or click to browse</p>
+                        <p class="file-types">Supported formats: PDF, DOCX, TXT</p>
+                        <input type="file" id="fileInput" accept=".pdf,.docx,.txt" style="display: none;">
+                        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                            Choose File
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Processing Section -->
+            <section class="processing-section" id="processingSection" style="display: none;">
+                <div class="processing-container">
+                    <div class="spinner"></div>
+                    <h3>Processing Document...</h3>
+                    <p>Our AI is analyzing your legal document</p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-container">
+                    <!-- Document Info -->
+                    <div class="document-info">
+                        <h3><i class="fas fa-file-alt"></i> Document Analysis Results</h3>
+                        <p class="filename" id="filename"></p>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="summary">
+                            <i class="fas fa-list"></i> Summary
+                        </button>
+                        <button class="tab-btn" data-tab="simplified">
+                            <i class="fas fa-language"></i> Simplified Text
+                        </button>
+                        <button class="tab-btn" data-tab="original">
+                            <i class="fas fa-file-text"></i> Original Text
+                        </button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Summary Tab -->
+                        <div class="tab-pane active" id="summaryTab">
+                            <div class="content-card">
+                                <h4><i class="fas fa-clipboard-list"></i> Document Summary</h4>
+                                <div class="summary-content" id="summaryContent"></div>
+                            </div>
+                        </div>
+
+                        <!-- Simplified Text Tab -->
+                        <div class="tab-pane" id="simplifiedTab">
+                            <div class="content-card">
+                                <h4><i class="fas fa-comments"></i> Simplified Legal Text</h4>
+                                <div class="simplified-content" id="simplifiedContent"></div>
+                            </div>
+                        </div>
+
+                        <!-- Original Text Tab -->
+                        <div class="tab-pane" id="originalTab">
+                            <div class="content-card">
+                                <h4><i class="fas fa-file-text"></i> Original Document Text</h4>
+                                <div class="original-content" id="originalContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Text Input Section -->
+            <section class="text-input-section">
+                <div class="text-input-container">
+                    <h3><i class="fas fa-edit"></i> Or Enter Text Directly</h3>
+                    <div class="input-group">
+                        <textarea 
+                            id="textInput" 
+                            placeholder="Paste your legal text here..."
+                            rows="6"
+                        ></textarea>
+                        <div class="button-group">
+                            <button class="action-btn primary" onclick="simplifyText()">
+                                <i class="fas fa-magic"></i> Simplify Text
+                            </button>
+                            <button class="action-btn secondary" onclick="explainTerms()">
+                                <i class="fas fa-question-circle"></i> Explain Terms
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="features-container">
+                    <h3>How It Works</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <h4>Upload Document</h4>
+                            <p>Upload your legal document in PDF, DOCX, or TXT format</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI Analysis</h4>
+                            <p>Our AI analyzes the document and identifies complex legal language</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Simplified Output</h4>
+                            <p>Get easy-to-understand explanations and summaries</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Smart Insights</h4>
+                            <p>Understand key terms and legal implications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 LegalDoc AI. Making legal documents accessible to everyone.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Term Explanations -->
+    <div class="modal" id="termModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Legal Term Explanation</h3>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

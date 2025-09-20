@@ -1,0 +1,103 @@
+SERVICE AGREEMENT
+
+This Service Agreement (the "Agreement") is entered into as of [DATE] (the "Effective Date") by and between:
+
+ABC Corporation, a Delaware corporation with its principal place of business at 123 Main Street, Anytown, ST 12345 ("Company")
+
+AND
+
+XYZ Consulting Services, LLC, a limited liability company with its principal place of business at 456 Business Ave, Somewhere, ST 67890 ("Consultant")
+
+WHEREAS, the Company desires to engage the Consultant to provide certain professional services; and
+
+WHEREAS, the Consultant desires to provide such services to the Company on the terms and conditions set forth herein;
+
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+
+1. SERVICES
+
+1.1 The Consultant shall provide professional consulting services as described in Exhibit A attached hereto and incorporated herein by reference (the "Services").
+
+1.2 The Consultant shall perform the Services in a professional and workmanlike manner, in accordance with generally accepted industry standards and practices.
+
+1.3 The Consultant shall devote such time and attention to the performance of the Services as may be reasonably necessary to complete the Services in a timely manner.
+
+2. TERM
+
+2.1 This Agreement shall commence on the Effective Date and continue for a period of twelve (12) months, unless earlier terminated in accordance with the provisions of Section 6.
+
+2.2 The Agreement may be renewed for additional one-year terms by mutual written agreement of the parties.
+
+3. COMPENSATION
+
+3.1 In consideration for the Services, the Company shall pay the Consultant a monthly fee of Five Thousand Dollars ($5,000.00) for services rendered.
+
+3.2 Payment shall be made within thirty (30) days of receipt of the Consultant's invoice.
+
+3.3 The Consultant shall be responsible for all taxes, including but not limited to income taxes, self-employment taxes, and any other taxes or assessments arising from the Consultant's performance of the Services.
+
+4. INDEPENDENT CONTRACTOR
+
+4.1 The Consultant is an independent contractor and not an employee, agent, or representative of the Company.
+
+4.2 The Consultant shall not be entitled to any benefits provided by the Company to its employees, including but not limited to health insurance, retirement benefits, or paid time off.
+
+4.3 The Consultant shall be solely responsible for providing and maintaining all necessary licenses, permits, and insurance required to perform the Services.
+
+5. CONFIDENTIALITY
+
+5.1 The Consultant acknowledges that during the course of performing the Services, the Consultant may have access to confidential and proprietary information of the Company ("Confidential Information").
+
+5.2 The Consultant agrees to maintain the confidentiality of all Confidential Information and shall not disclose such information to any third party without the prior written consent of the Company.
+
+5.3 The Consultant's obligations with respect to Confidential Information shall survive the termination of this Agreement for a period of five (5) years.
+
+6. TERMINATION
+
+6.1 Either party may terminate this Agreement upon thirty (30) days written notice to the other party.
+
+6.2 The Company may terminate this Agreement immediately upon written notice if the Consultant:
+   (a) Breaches any material term of this Agreement;
+   (b) Fails to perform the Services in a professional and workmanlike manner;
+   (c) Engages in conduct that reflects adversely upon the Company.
+
+6.3 Upon termination, the Consultant shall promptly return all Company property and materials in the Consultant's possession or control.
+
+7. INDEMNIFICATION
+
+7.1 The Consultant shall indemnify, defend, and hold harmless the Company from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising from or relating to:
+   (a) The Consultant's performance of the Services;
+   (b) Any breach of this Agreement by the Consultant;
+   (c) Any negligent or intentional acts or omissions of the Consultant.
+
+8. GOVERNING LAW AND JURISDICTION
+
+8.1 This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware.
+
+8.2 Any dispute arising out of or relating to this Agreement shall be resolved exclusively in the courts of the State of Delaware.
+
+9. MISCELLANEOUS
+
+9.1 This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior agreements, understandings, and negotiations.
+
+9.2 This Agreement may not be modified except by a written instrument signed by both parties.
+
+9.3 If any provision of this Agreement is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+9.4 This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+ABC CORPORATION
+
+By: _________________________
+Name: John Smith
+Title: Chief Executive Officer
+Date: _________________________
+
+XYZ CONSULTING SERVICES, LLC
+
+By: _________________________
+Name: Jane Doe
+Title: Managing Member
+Date: _________________________
