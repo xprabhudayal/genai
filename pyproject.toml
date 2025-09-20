@@ -1,0 +1,32 @@
+[project]
+name = "gen-ai-hackathon"
+version = "0.1.0"
+description = "A project for the Gen AI Hackathon"
+authors = [{name = "Your Name", email = "you@example.com"}]
+requires-python = ">=3.11"
+dependencies = [
+    "flask==2.3.3",
+    "openai==1.104.2",
+    "python-dotenv==1.0.0",
+    "PyPDF2==3.0.1",
+    "python-docx==0.8.11",
+    "langchain==0.3.27",
+    "langchain-openai==0.3.33",
+    "streamlit==1.49.1",
+    "pandas==2.3.2",
+    "numpy==2.3.3",
+    "requests==2.31.0",
+    "beautifulsoup4==4.12.2",
+    "markdown==3.5.1",
+
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["app.py", "config.py", "streamlit_app.py", "test_app.py"]

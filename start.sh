@@ -30,7 +30,7 @@ source venv/bin/activate
 
 # Install dependencies
 echo "📚 Installing dependencies..."
-pip install -r requirements.txt
+uv pip install -p python3 .
 
 # Check if .env file exists
 if [ ! -f ".env" ]; then
